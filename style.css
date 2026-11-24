@@ -19,3 +19,12 @@
     text-align: center;
     text-decoration: none;
 }
+h1, h2, h3 {
+    color: blue;
+    text-align: center;
+}
+.gallery h3 {
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+}
