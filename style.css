@@ -1,14 +1,141 @@
-text-align: center;
-    text-decoration: none;
-}
-h1, h2, h3 {
-    color: blue;
-    text-align: center;
-}
-.gallery h3 {
-    color: blue;
-    text-align: center;
-    font-weight: bold;
-}
+
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    background: #111;
+}
+
+/* NAVIGATION BAR */
+#tabs-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 9999;
+}
+
+#tabs-top a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* HOMEPAGE */
+#main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 20px 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+#content {
+    width: 100%;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery a {
+    background: black;
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* FULL-SCREEN HERO PAGES */
+.hero-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.hero-page img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-name {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 2px 8px black;
+    z-index: 2;
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* PHONES */
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    #tabs-top {
+        gap: 15px;
+    }
+
+    #tabs-top a {
+        font-size: 13px;
+    }
+
+    .hero-name {
+        font-size: 30px;
+    }
+}
