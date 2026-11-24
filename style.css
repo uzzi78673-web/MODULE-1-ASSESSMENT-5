@@ -102,6 +102,9 @@ h1, h2 {
   border-bottom: 1px solid #334155;
   padding-bottom: 4px;
 }
+.gallery img{
+        width: 100%;
+ }
 
 .profile-container b {
   color: #93c5fd;
