@@ -1,94 +1,21 @@
-
-body {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 500;
-    width: 100%;
-    height: 80px;
-    background-image: url('images/avengers-bg.jpg');
-    background-repeat: repeat-x;
-}
-
-#header img {
-    display: block;
-    margin: auto;
-    height: 70px;
-}
-
-/* TOP NAVIGATION */
-
 #tabs-top {
     position: fixed;
     top: 80px;
     left: 0;
-    z-index: 500;
     width: 100%;
     height: 40px;
-    background-color: #000000;
+    background-color: black;
+    z-index: 500;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 #tabs-top a {
-    display: block;
-    flex: 1;
-    font-weight: bold;
-    color: blue;
-    text-align: center;
+    color: blue !important;
     text-decoration: none;
-}
-
-/* MAIN CONTENT */
-
-#main {
-    margin-top: 120px;
-    margin-bottom: 40px;
-}
-
-#content {
-    padding-top: 1px;
-}
-
-/* GALLERY */
-
-.gallery {
-    width: 100%;
-}
-
-.gallery img {
-    width: 100%;
-    display: block;
-}
-
-/* BOTTOM NAVIGATION */
-
-#tabs-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 500;
-    width: 100%;
-    height: 40px;
-    background-color: #000000;
-}
-
-#tabs-bottom a {
-    float: left;
-    display: block;
-    width: 50%;
-    height: 35px;
     font-weight: bold;
-    color: white;
     text-align: center;
-    text-decoration: none;
-    padding-top: 12px;
+    width: 33.33%;
 }
