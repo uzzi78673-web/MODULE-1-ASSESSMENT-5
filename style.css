@@ -88,15 +88,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+#tabs-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #tabs-top a {
     color: blue;
     text-align: center;
     text-decoration: none;
     flex: 1;
+    font-weight: bold;
 }
-#tabs-top a {
-    color: blue;
-    text-align: center;
-    display: block;
-}
+
