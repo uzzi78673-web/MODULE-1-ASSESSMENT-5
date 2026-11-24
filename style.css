@@ -83,3 +83,20 @@ body {
     text-decoration: none;
     padding-top: 12px;
 }
+#tabs-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabs-top a {
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+}
+#tabs-top a {
+    color: blue;
+    text-align: center;
+    display: block;
+}
