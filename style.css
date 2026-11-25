@@ -1,82 +1,62 @@
 
-html, body {
-    width: 100%;
-    height: 100%;
+/* General Page Styling */
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
+    font-family: Helvetica, sans-serif;
+    background-color: #d9f2b4; /* Matches your current light green background */
 }
 
-/* TOP NAVIGATION */
-#tabs-top {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Blue Navigation Bar */
+#menu {
     width: 100%;
-    height: 50px;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    z-index: 9999;
-}
-
-#tabs-top a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* FULL SCREEN IMAGE */
-.hero-page {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    height: 100dvh;
-    overflow: hidden;
-    background-color: white;
-}
-
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-/* SUPERHERO NAME */
-.hero-name {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    width: 100%;
-    color: white;
+    height: 45px;
+    background-color: cornflowerblue;
+    padding-top: 12px;
     text-align: center;
-    font-size: 45px;
-    text-shadow: 2px 2px 8px black;
-    z-index: 10000;
 }
 
-/* MOBILE */
-@media screen and (max-width: 480px) {
-    #tabs-top {
-        gap: 15px;
-    }
-
-    #tabs-top a {
-        font-size: 13px;
-    }
-
-    .hero-name {
-        font-size: 30px;
-    }
+#menu a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 800;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+#menu a:hover {
+    color: #5077bd;
+}
+
+/* Full-Screen Images */
+.gallery img {
+    width: 100%;
+    display: block; /* Removes small white lines between stacked images */
+}
+
+/* Blue Centered Headings for About, Contact, and Hero Pages */
+h2 {
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* Centered Text for About and Contact Pages */
+.info-box {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Hero Bio & Power Stats Styling */
+.bio-content {
+    padding: 20px;
+}
+
+h4 {
+    color: cornflowerblue;
+    font-size: 22px;
+}
+
