@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #d9f2b4; /* Matches your current light green background */
+    background-color: #d9f2b4;
 }
 
 /* Blue Navigation Bar */
@@ -32,10 +32,26 @@ body {
 /* Full-Screen Images */
 .gallery img {
     width: 100%;
-    display: block; /* Removes small white lines between stacked images */
+    display: block;
 }
 
-/* Blue Centered Headings for About, Contact, and Hero Pages */
+/* Clickable Blue Superhero Names Below Each Image */
+.hero-link {
+    display: block;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 0 30px 0;
+}
+
+.hero-link:hover {
+    color: #5077bd;
+    text-decoration: underline;
+}
+
+/* Blue Centered Headings for About, Contact, and Hero Info Pages */
 h2 {
     color: cornflowerblue;
     text-align: center;
@@ -59,4 +75,3 @@ h4 {
     color: cornflowerblue;
     font-size: 22px;
 }
-
